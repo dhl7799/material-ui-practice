@@ -3,7 +3,7 @@
     $ npm init -y
 
     1) 개발툴
-       $ npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader sass-loader node-sass babel-loader @babel/core @babel/cli @babel/preset-env @babel/preset-react case-sensitive-paths-webpack-plugin @material-ui/core @material-ui/icons @mui/material @emotion/react @emotion/styled recharts --legacy-peer-deps
+       $ npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader sass-loader node-sass babel-loader @babel/core @babel/cli @babel/preset-env @babel/preset-react case-sensitive-paths-webpack-plugin @material-ui/core @material-ui/icons @mui/material @emotion/react @emotion/styled recharts @mui/lab --legacy-peer-deps
     2) react library
        $ npm i react react-dom prop-types styled-components react-addons-update react-router react-router-dom react-modal react-axios
 ```
