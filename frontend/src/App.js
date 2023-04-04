@@ -6,23 +6,41 @@ import TreeItem from '@mui/lab/TreeItem';
 
 const data = {
   id: 'root',
-  name: 'Parent',
+  name: '더존비즈온',
   children: [
     {
       id: '1',
-      name: 'Child - 1',
-    },
-    {
-      id: '3',
-      name: 'Child - 3',
-      children: [
+      name: '영업본부',
+      children:[
         {
-          id: '4',
-          name: 'Child - 4',
-        },
-      ],
-    },
-  ],
+          id:'2',
+          name: '영업센터',
+          children:[
+            {
+              id:'3',
+              name: '영업1Unit',
+              children:[
+                {
+                  id:'5',
+                  name: '영업1Cell'
+                }
+              ]
+            },
+            {
+              id:'4',
+              name: '영업2Unit',
+              children:[
+                {
+                  id:'6',
+                  name: '영업2Cell'
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 };
 
 export default function RichObjectTreeView() {
@@ -40,7 +58,6 @@ export default function RichObjectTreeView() {
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpanded={['root']}
       defaultExpandIcon={<ChevronRightIcon />}
-      sx={{ height: 110, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
     >
       {renderTree(data)}
     </TreeView>
